@@ -18,13 +18,11 @@ namespace Tutorials
             Horizontal = Input.GetAxis("Horizontal");
             Vertical = Input.GetAxis("Vertical");
             FireWeapon = Input.GetKey(KeyCode.Mouse0);
-            if (FireWeapon)
-                OnFire();
-        }
 
-        void SetButtonsForAbilities()
-        {
-            AbilityFactory_Static.GetAbilityNames();
+            if (FireWeapon)
+            {
+                OnFire();
+            }
         }
     }
 }

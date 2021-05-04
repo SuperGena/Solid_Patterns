@@ -17,7 +17,7 @@ namespace Tutorials
                 var button = Instantiate(buttonPrefab);
                 abilityButtonsList.Add(button);
 
-                button.gameObject.name = name + " Button";
+                button.gameObject.name = $"{name} Button";
                 button.SetAbilityName(name);
                 button.transform.SetParent(transform);
             }

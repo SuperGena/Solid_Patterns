@@ -15,7 +15,8 @@ namespace Tutorials
             if (IsInitialized)
                 return;
 
-            var abilityTypes = Assembly.GetAssembly(typeof(Ability)).GetTypes()
+            var abilityTypes = Assembly.GetAssembly(typeof(Ability))
+                .GetTypes()
                 .Where(myType => myType.IsClass && !myType.IsAbstract && myType.IsSubclassOf(typeof(Ability)));
 
             abilitiesByName = new Dictionary<string, Type>();
@@ -35,6 +36,7 @@ namespace Tutorials
             {
                 Type type = abilitiesByName[abilityType];
                 var ability = Activator.CreateInstance(type) as Ability;
+
                 return ability;
             }
 
