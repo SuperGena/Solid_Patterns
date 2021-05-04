@@ -13,7 +13,9 @@ namespace Tutorials
         public static void InititializeFactory()
         {
             if (IsInitialized)
+            {
                 return;
+            }
 
             var abilityTypes = Assembly.GetAssembly(typeof(Ability))
                 .GetTypes()
