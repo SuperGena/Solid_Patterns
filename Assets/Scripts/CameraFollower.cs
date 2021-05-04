@@ -7,28 +7,27 @@ namespace Tutorials
     public class CameraFollower : MonoBehaviour
     {
         [SerializeField] private Transform _target;
-        [SerializeField] private Vector3 _offset;
-        [SerializeField] private float _speed;
 
-        private Vector3 moveDirection;
+        [SerializeField] private float smoothTime = 0.3f;
 
-        private void Awake()
+        [SerializeField] private Vector3 Offset;
+
+        private Vector3 velocity = Vector3.zero;
+
+        private void Start()
         {
-            if (_target == null)
-                Debug.LogError("CameraFollower does not have a target!!");
-            
+            Offset = transform.position - _target.position;
         }
 
-
-        private void Update()
+        private void LateUpdate()
         {
             FollowTarget(_target);
         }
 
-        void FollowTarget(Transform target)
+        private void FollowTarget(Transform target)
         {
-            moveDirection = target.position - _offset;
-            transform.position = Vector3.Lerp(transform.position, moveDirection, _speed * Time.deltaTime);
+            Vector3 targetPosition = target.position + Offset;
+            transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
         }
     }
 }

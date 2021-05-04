@@ -21,5 +21,10 @@ namespace Tutorials
             if (FireWeapon)
                 OnFire();
         }
+
+        void SetButtonsForAbilities()
+        {
+            AbilityFactory_Static.GetAbilityNames();
+        }
     }
 }

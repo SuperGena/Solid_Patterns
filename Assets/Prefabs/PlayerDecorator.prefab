@@ -250,7 +250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 6863140761807844005, guid: aba9e69f549f17d41ba0caf13e029a74, type: 3}
   weaponMountPoint: {fileID: 3834841506126598207}
-  fireForce: 300
+  fireForce: 3000
 --- !u!114 &6428272298929548412
 MonoBehaviour:
   m_ObjectHideFlags: 0
