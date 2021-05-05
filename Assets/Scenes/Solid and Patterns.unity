@@ -708,6 +708,10 @@ PrefabInstance:
       propertyPath: _rotationSpeed
       value: 2000
       objectReference: {fileID: 0}
+    - target: {fileID: 8905339989870122283, guid: 8be31959d814ddd4a843bfa42ba2c457, type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3374865161579317787, guid: 8be31959d814ddd4a843bfa42ba2c457, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8be31959d814ddd4a843bfa42ba2c457, type: 3}
@@ -807,9 +811,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f437f3882a7cfb42a37e34c2ac9255f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _target: {fileID: 0}
+  _target: {fileID: 1659941851}
   smoothTime: 0.2
-  Offset: {x: 0, y: -8, z: 12}
+  Offset: {x: 0, y: 8, z: -12}
 --- !u!1 &1011186399
 GameObject:
   m_ObjectHideFlags: 0
@@ -1109,6 +1113,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1654160391}
   m_CullTransparentMesh: 1
+--- !u!4 &1659941851 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3374865161579317786, guid: 8be31959d814ddd4a843bfa42ba2c457, type: 3}
+  m_PrefabInstance: {fileID: 941965627}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1671183878
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,8 +4,9 @@ using UnityEngine;
 
 namespace Tutorials
 {
-    public abstract class Race
+    public interface IMovementInputGetter
     {
-        internal abstract float Strange { get; }
+        float Horizontal { get; }
+        float Vertical { get; }
     }
 }

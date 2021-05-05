@@ -51,6 +51,7 @@ namespace Tutorials
         {
             UnityEngine.Debug.Log("GetCharctersNames");
             InititializeFactory();
+            
             return charctersByName.Keys;
         }
     }
