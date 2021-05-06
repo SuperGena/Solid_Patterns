@@ -11,15 +11,15 @@ namespace Tutorials
 
         private void InitializeButton()
         {
-            gameObject.GetComponent<Button>().onClick.AddListener(SetAbilityFunctionality);
+            gameObject.GetComponent<Button>().onClick.AddListener(SetRaceFunctionality);
         }
 
-        void SetAbilityFunctionality()
+        void SetRaceFunctionality()
         {
             RaceFactory.GetAbility(_raceName).Process();
         }
 
-        internal void SetAbilityName(string name)
+        internal void SetRaceName(string name)
         {
             GetComponentInChildren<Text>().text = name;
             _raceName = name;
