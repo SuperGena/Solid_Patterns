@@ -4,11 +4,11 @@ using UnityEngine;
 
 namespace Tutorials
 {
-    public class Hobbit : Race
+    public class Elf : Race
     {
-        internal override string Name => "Hobbit";
+        internal override string Name => "Elf";
 
-        internal override float Strange => 80f;
+        internal override float Strange => 20f;
 
         public override void Process()
         {

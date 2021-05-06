@@ -10,10 +10,7 @@ namespace Tutorials
     {
         [SerializeField] private float speed = 30f;
 
-        private Vector3 worldPosition;
-
         private GetPlayerInput playerInput;
-        private RotateTowardsMouse rotateTowards;
 
         private void Awake()
         {
